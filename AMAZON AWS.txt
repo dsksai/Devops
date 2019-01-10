@@ -1,0 +1,285 @@
+
+-S3 is an object based storage solution and can be thought of as an easily accessed, easily managed and infinitely expandable data warehouse.
+-S3 Compatible Storage is a storage solution that allows access to and management of the data it stores over an S3 compliant interface
+-Amazon Simple Storage Service is storage for the Internet. It is designed to make web-scale computing easier for developers. Amazon S3 has a simple web services interface 
+that you can use to store and retrieve any amount of data, at any time, from anywhere on the web.
+-Amazon Simple Storage Service is storage for the Internet. It is designed to make web-scale computing easier for developers.
+ Amazon S3 has a simple web services interface that you can use to store and retrieve any amount of data, at any time, from anywhere on the web.
+-Individual Amazon S3 objects can range in size from a minimum of 0 bytes to a maximum of 5 terabytes. 
+--------------The largest object that can be uploaded in a single PUT is 5 gigabytes.
+-Your data is always encrypted when it's stored in Amazon S3, with encryption keys managed by Amazon
+-Amazon S3 is a simple key, value store designed to store as many objects as you want. You store these objects in one or more buckets. ...
+ The version ID is a string that Amazon S3 generates when you add an object to a bucket. For more information, see Object Versioning.
+-Amazon S3 is an object storage capable of storing very large objects, upto 5TB in size. ... Objects in S3 can be archived to Amazon Glacier which is a very cheap archival service. 
+DynamoDB on the other hand is a NoSQL database that can be used as a key value or a document(schema less record) store.
+-An Amazon S3 bucket is a public cloud storage resource available in Amazon Web Services' (AWS) Simple Storage Service (S3), an object storage offering. 
+Amazon S3 buckets, which are similar to file folders, store objects, which consist of data and its descriptive metadata.
+-By default, customers can provision up to 100 buckets per AWS account. However, you can increase your Amazon S3 bucket limit by visiting AWS Service Limits.
+-The s3 protocol is used in a URL that specifies the location of an Amazon S3 bucket and a prefix to use for reading or writing files in the bucket
+-The maximum path lengths (including filename) are: SyncBackV4 and later: approximately 32,767 characters, except when using Zip compression which is approximately 512 characters,
+ and when using the cloud (Microsoft Azure and Amazon S3) the maximum filename length is approximately 1024 characters.
+-By itself, Amazon S3 is only a storage services. To use it as a CDN, you have to activate CloudFront and configure your Amazon S3 with it. ...
+ Next, select the Amazon S3 bucket that you want to serve as CDN.
+-S3 is not a distributed file system. It's a binary object store that stores data in key-value pairs. ... 
+Each bucket is a new “database”, with keys being your “folder path” and values being the binary objects (files).
+ It's presented like a file system and people tend to use it like one.
+-S3 implements a style of object oriented programming called generic-function OO.
+-An S3 ACL is a sub-resource that's attached to every S3 bucket and object. It defines which AWS accounts or groups are granted access and the type of access.
+ When you create a bucket or an object, Amazon S3 creates a default ACL that grants the resource owner full control over the resource
+
+
+<<<<<<<<<<<
+
+S3 (Simple Storage Service) and EBS (Elastic Block Store) are two file storage services provided by Amazon.
+ The main difference between them is with what they can be used with.
+ EBS is specifically meant for EC2 (Elastic Computing Cloud) instances and is not accessible unless mounted to one
+
+>>>>>>>>>>>>>>>>
+
+
+- With cross-region replication, every object uploaded to an S3 bucket is automatically replicated to a destination bucket in a different AWS region that you choose
+-
+
+
+
+
+-MOUNTING>>	 A S3 bucket can be mounted in a AWS instance as a file system known as S3fs. 
+S3fs is a FUSE file-system that allows you to mount an Amazon S3 bucket as a local file-system.
+ It behaves like a network attached drive, as it does not store anything on the Amazon EC2, but user can access the data on S3 from EC2 instance.
+
+-CONNECTING TO AMAZON S3
+
+Obtain the login credentials (Access Key ID, Secret Access Key) from the Amazon Portal - Access Credentials page.
+Open a new connection: menu: File - Connection.
+Select the S3 Protocol.
+Select Amazon S3. ...
+Enter the username and password: ...
+Click OK to connect.
+
+-Amazon Simple Storage Service (Amazon S3) is a scalable, high-speed, low-cost, web-based cloud storage service designed for online backup and archiving of data and application programs.
+ S3 was designed with a minimal feature set and created to make web-scale computing easier for developers.
+
+-CloudFront can distribute almost any type of object for you using an Amazon S3 bucket as the source, for example, text, images, and videos
+
+-"Amazon S3 buckets in all Regions provide read-after-write consistency for PUTS of new objects and eventual consistency for overwrite PUTS and DELETES
+
+-Individual Amazon S3 objects can range in size from 1 byte to 5 terabytes. The largest object that can be uploaded in a single PUT is 5 gigabytes. 
+For objects larger than 100 megabytes, customers should consider using the Multipart Upload capability. There is no limit on objects per bucket.
+
+-Protecting Data Using Encryption. Data protection refers to protecting data while in-transit (as it travels to and from Amazon S3) and at rest (while it is stored on disks in Amazon S3 data centers). 
+You can protect data in transit by using SSL or by using client-side encryption.
+
+-Amazon S3 Default Encryption for S3 Buckets. ... You can set default encryption on a bucket so that all objects are encrypted when they are stored in the bucket. 
+The objects are encrypted using server-side encryption with either Amazon S3-managed keys (SSE-S3) or AWS KMS-managed keys (SSE-KMS).
+
+-In order to get your Access Key ID and Secret Access Key follow next steps:
+
+Open the IAM console.
+From the navigation menu, click Users.
+Select your IAM user name.
+Click User Actions, and then click Manage Access Keys.
+Click Create Access Key.
+Your keys will look something like this:
+Access key ID example: AKIAIOSFODNN7EXAMPLE
+Secret access key example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+Click Download Credentials, and store the keys in a secure location.
+
+<<<<<<<<<<<<<<<
+
+Object storage (also known as object-based storage) is a computer data storage architecture that manages data as objects, 
+as opposed to other storage architectures like file systems which manage data as a file hierarchy, and block storage which manages data as blocks within sectors and tracks.
+
+<<<<<<<<<<<<<<<<<<<<<
+
+
+ELASTIC BLOCK STORAGE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-Amazon Elastic Block Store (Amazon EBS) provides persistent block storage volumes for use with Amazon EC2 instances in the AWS Cloud. 
+Each Amazon EBS volume is automatically replicated within its Availability Zone to protect you from component failure, offering high availability and durability.
+
+-Block storage is data storage typically used in storage-area network (SAN) environments where data is stored in volumes, also referred to as blocks. ... 
+These blocks are controlled by the server-based operating system, and are generally accessed by Fibre Channel, iSCSI or Fibre Channel over Ethernet protocols.
+
+-EBS gives you persistent, high-performance, high-availability block-level storage which you can attach to a running instance of EC2. 
+You can format it and mount it as a file system, or you can access the raw storage directly. You can, of course, host a database on an EBS volume
+
+
+
+AMAZON CLOUD FRONT>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-Amazon CloudFront is a web service that speeds up distribution of your static and dynamic web content, such as .html, .css, .js, and image files, to your users. 
+CloudFront delivers your content through a worldwide network of data centers called edge locations.
+
+-CloudFront can distribute almost any type of object for you using an Amazon S3 bucket as the source, for example, text, images, and videos. 
+
+
+
+
+AMAZON CLOUD FORMATION>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-AWS CloudFormation is a service that helps you model and set up your Amazon Web Services resources so that you can spend less time managing those resources 
+and more time focusing on your applications that run in AWS
+
+
+AMAZON CLOUD WATCH>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-Amazon CloudWatch is a monitoring service for AWS cloud resources and the applications you run on AWS. 
+You can use Amazon CloudWatch to collect and track metrics, collect and monitor log files, set alarms, and automatically react to changes in your AWS resource
+-Amazon CloudWatch is a component of Amazon Web Services (AWS) that provides monitoring for AWS resources and the customer applications running on the Amazon infrastructure.
+
+-CLOUD WATCH EVENT
+Amazon CloudWatch Events delivers a near real-time stream of system events that describe changes in Amazon Web Services (AWS) resources. 
+Using simple rules that you can quickly set up, you can match events and route them to one or more target functions or streams.
+
+
+AMAZON VPC>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-Amazon Virtual Private Cloud (Amazon VPC) enables you to launch AWS resources into a virtual network that you've defined. 
+This virtual network closely resembles a traditional network that you'd operate in your own data center, with the benefits of using the scalable infrastructure of AWS.
+
+
+AMAZON RDS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-Amazon Relational Database Service (Amazon RDS) is a web service that makes it easier to set up, operate, and scale a relational database in the cloud.
+ It provides cost-efficient, resizable capacity for an industry-standard relational database and manages common database administration tasks.
+
+-How do I connect to AWS RDS?
+To find the endpoint for a MySQL DB instance in the AWS Management Console:
+Open the RDS console and then choose Instances to display a list of your DB instances.
+Click the MySQL DB instance name to display its details.
+Scroll to the Connect section and copy the endpoint. Also, note the port number.
+
+
+
+
+<<<<<<<<<<
+
+OBJECT STORAGE AND BLOCK STORAGE 
+
+In the enterprise data center, object storage is used for these same types of storage needs, where the data needs to be highly available and highly durable.
+ However, object storage generally doesn't provide you with the ability to incrementally edit one part of a file (as block storage does)
+
+>>>>>>>>>>
+
+AMAZON CLOUD TRIAL>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-AWS CloudTrail is an application program interface (API) call-recording and log-monitoring Web service offered by Amazon Web Services (AWS). 
+--------------->>for which purpose we will use call recording????
+
+ AWS CloudTrail allows AWS customers to record API calls, sending log files to Amazon S3 buckets for storage.
+
+
+API GATEWAY IN AWS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-API Gateway helps you deliver robust, secure, and scalable mobile and web application backends. 
+API Gateway allows you to securely connect mobile and web applications to business logic hosted on AWS Lambda, 
+APIs hosted on Amazon EC2, or other publicly addressable web services hosted inside or outside of AWS.
+
+
+AMAZON AUTOSCALING>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-AWS Auto Scaling is a service that automatically monitors and adjusts compute resources to maintain performance for applications hosted in the Amazon Web Services (AWS) public cloud. ...
+ As demand spikes, the AWS Auto Scaling service can automatically scale those resources, and, as demand drops, scale them back down.
+
+
+AMAZON ROUTE 53>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-Amazon Route 53 (Route 53) is a scalable and highly available Domain Name System (DNS). 
+Released on December 5, 2010 , it is part of Amazon.com's cloud computing platform, Amazon Web Services (AWS). ... Route 53's servers are distributed throughout the world.
+
+-AWS supposedly named the service Route 53 because all DNS requests are handled through port 53, and the "route" piece resembles the historic "Route 66" of the USA. 
+Presumably because DNS queries are handled on "well-known port" 53.
+
+-Amazon Route 53 (Route 53) is a scalable and highly available Domain Name System (DNS). ... 
+In addition to being able to route users to various AWS services, including EC2 instances, Route 53 also enables AWS customers to route users to non-AWS infrastructure and to monitor the health of your application and its endpoints
+
+AMAZON DYNAMO DB>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. ...
+ With DynamoDB, you can create database tables that can store and retrieve any amount of data, and serve any level of request traffic.
+
+AWS REDSHIFT>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. ... 
+The first step to create a data warehouse is to launch a set of nodes, called an Amazon Redshift cluster. 
+After you provision your cluster, you can upload your data set and then perform data analysis queries.
+
+
+AWS LAMBDA>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+-AWS Lambda is similar to how a platform as a service (PaaS) works. In a platform as a service, you typically create an application and deploy it to a PaaS. ... 
+This is why many people use the term function as a service (FaaS) when describing AWS Lambda or Serverless architectures.
+
+
+-AWS REST ALL STUFF:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+-AWS Free Tier (12 Month Introductory Period):
+Elastic Compute Cloud (EC2) ...
+Amazon Simple Storage Service (S3) ...
+Amazon Elastic File System (EFS) ...
+Amazon Relational Database Service (RDS) ...
+Amazon Cloud Directory. ...
+Amazon Connect. ...
+Amazon GameLift.
+
+-Amazon Elastic MapReduce (EMR) is an Amazon Web Services (AWS) tool for big data processing and analysis. 
+Amazon EMR offers the expandable low-configuration service as an easier alternative to running in-house cluster computing.
+
+-An object is a data structure having some attributes and methods which act on its attributes. Class is a blueprint for the object. We can think of class like a sketch (prototype) of a house.
+
+-AWS Elastic Compute Service or EC2 is IaaS(Infrastructure as a Service).
+ This is because Amazon takes the responsibility of networking, storage, server and virtualization 
+and the user is responsible for managing the Operating System, middleware, runtime, data and application. ... 
+AWS Elastic BeanStalk is PaaS
+
+-S3 INFREQUENT ACCESS:
+
+-Amazon S3 Standard-Infrequent Access (S3 Standard-IA) is an Amazon S3 storage class for data that is accessed less frequently, but requires rapid access when needed. 
+S3 Standard-IA offers the high durability, high throughput, and low latency of S3 Standard, with a low per GB storage price and per GB retrieval fee
+-NoSQL Database. Amazon DynamoDB is a fast and flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale.
+ It is a fully managed cloud database and supports both document and key-value store models.
+
+-CLOUD DATABASE AND AWS DATABASE   ..need to know
+
+-AWS AURORA:
+-Amazon Aurora is a relational database engine that combines the speed and reliability of high-end commercial databases with the simplicity and cost-effectiveness of open source databases. 
+It delivers up to five times the throughput of standard MySQL and up to three times the throughput of standard PostgreSQL
+
+-AWS EMR:
+-Amazon EMR processes big data across a Hadoop cluster of virtual servers on Amazon Elastic Compute Cloud (EC2) and Amazon Simple Storage Service (S3). 
+The elastic in EMR's name refers to its dynamic resizing ability, which allows it to ramp up or reduce resource use depending on the demand at any given time.
+-Amazon Elastic MapReduce (EMR) is an Amazon Web Services (AWS) tool for big data processing and analysis.
+
+-DEDUPE CHECK:
+-In computing, data deduplication is a specialized data compression technique for eliminating duplicate copies of repeating data. 
+Related and somewhat synonymous terms are intelligent (data) compression and single-instance (data) storage
+-data dedupication in storage.
+
+
+-IAAS N ITS USE:
+-Infrastructure as a Service. ... IaaS is the most flexible cloud computing model and allows for automated deployment of servers, processing power, storage, and networking. 
+IaaS clients have true control over their infrastructure than users of PaaS or SaaS services
+
+
+
+-AWS supports MySQL in a variety of ways, including a fully managed database service, Amazon Relational Database Service (RDS) for MySQL.
+ Amazon Aurora with MySQL compatibility is also built using MySQL, and Amazon RDS supports the popular MySQL fork project, MariaDB
+
+-AWS Elastic Compute Service or EC2 is IaaS(Infrastructure as a Service). ... AWS also has a PaaS offering called AWS Lambda https://aws.amazon.com/lambda/de.
+
+-Hybrid cloud 
+is a cloud computing environment that uses a mix of on-premises, private cloud and third-party, public cloud services with orchestration between the two platforms.
+
+-VPN:
+-A virtual private network (VPN) is a technology that creates a safe and encrypted connection over a less secure network, such as the internet. 
+VPN technology was developed as a way to allow remote users and branch offices to securely access corporate applications and other resources.
+
+-Does RDS use EBS?
+Amazon RDS uses EBS volumes for database and log storage. ...
+ You can scale the storage capacity allocated to your DB Instance using the AWS Management Console, the ModifyDBInstance API, or the modify-db-instance command
+
+
+
+-
+
+g-
